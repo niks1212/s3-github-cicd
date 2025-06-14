@@ -1,77 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nikhil Gorade | DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <h1>👋 Hi, I'm <span class="highlight">Nikhil Gorade</span></h1>
-    <p>Aspiring Cloud DevOps Engineer | AWS | Docker | Jenkins | CI/CD</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Nikhil Somnath Gorade</h1>
+    <p>Cloud DevOps Engineer | AWS | Docker | Jenkins | Terraform</p>
   </header>
 
-  <!-- About Me -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate DevOps enthusiast with hands-on experience in AWS, Docker, Jenkins, and CI/CD pipelines.
-      I’ve worked on projects involving cloud automation and containerization, aiming to deliver scalable and reliable infrastructure.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>🚀 Django To-Do App with Docker</h3>
-        <p>Built and containerized a To-Do web app using Docker for easy deployment and scalability.</p>
-      </div>
-      <div class="project">
-        <h3>⚙️ Automated Infrastructure Deployment</h3>
-        <p>Used Terraform and Jenkins to automate AWS infrastructure and deployment processes.</p>
-      </div>
-      <div class="project">
-        <h3>🧠 CI/CD for Machine Learning Projects</h3>
-        <p>Designed a Jenkins pipeline to automatically test and deploy ML models.</p>
-      </div>
-      <div class="project">
-        <h3>🔐 Blockchain Counterfeit Prevention App</h3>
-        <p>Developed a secure app to track and prevent product counterfeiting using blockchain technology.</p>
-      </div>
+  <section class="section-buttons">
+    <h2>Explore My Work</h2>
+    <div class="buttons">
+      <button onclick="showSection('projects')">📁 Projects</button>
+      <button onclick="showSection('certifications')">🎓 Certifications</button>
+      <button onclick="showSection('resume')">📄 Resume</button>
     </div>
   </section>
 
-  <!-- Certifications -->
-  <section class="certifications">
-    <h2>Certifications</h2>
+  <section id="projects" class="hidden-section">
+    <h3>Projects</h3>
     <ul>
-      <li>
-        <a href="https://drive.google.com/file/d/1_m4snR0NdwjN7OovwU8IjAuh_ZM4CgGe/view?usp=sharing" target="_blank">
-          AWS DevOps Internship Certificate – LevelUp, Hyderabad
-        </a>
-      </li>
+      <li>Django To-Do App with Docker</li>
+      <li>Automated Infrastructure Deployment with Terraform & Jenkins</li>
+      <li>CI/CD Pipeline for Machine Learning Projects</li>
+      <li>Blockchain-Based Counterfeit Prevention Application</li>
+      <li>Two-Digit Object Counter using 7-Segment Display</li>
     </ul>
   </section>
 
-  <!-- Magical Resume -->
-  <section class="resume-cta">
-    <h2>✨ Explore My Magical Resume</h2>
-    <div class="buttons">
-      <a href="your-resume-link.pdf" class="btn resume" target="_blank">📄 View Resume</a>
-      <a href="https://github.com/niks1212" class="btn github" target="_blank">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/nikhil-gorade-74b015216/" class="btn linkedin" target="_blank">🔗 LinkedIn</a>
-      <a href="mailto:gorde1212nikhil@gmail.com" class="btn contact">📬 Contact Me</a>
-    </div>
+  <section id="certifications" class="hidden-section">
+    <h3>Certifications</h3>
+    <ul>
+      <li><a href="https://drive.google.com/file/d/1_m4snR0NdwjN7OovwU8IjAuh_ZM4CgGe/view?usp=sharing" target="_blank">AWS DevOps Internship – LevelUp</a></li>
+    </ul>
+  </section>
+
+  <section id="resume" class="hidden-section">
+    <h3>My Resume</h3>
+    <a href="your-resume-link.pdf" class="btn" target="_blank">📄 Download Resume</a>
   </section>
 
   <footer>
-    <p>© 2025 Nikhil Gorade | Built with 💙 and Cloud</p>
+    <p>&copy; 2025 Nikhil Somnath Gorade</p>
   </footer>
 
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.hidden-section');
+      sections.forEach(section => section.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
 </body>
+
 </html>
