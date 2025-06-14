@@ -2,115 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nikhil Gorade | DevOps Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background: #0f172a; color: #f8fafc; line-height: 1.6; }
-    header.hero {
-      background: linear-gradient(to right, #4f46e5, #3b82f6);
-      padding: 100px 20px; text-align: center; color: white;
-    }
-    .hero h1 { font-size: 3.2rem; font-weight: 800; }
-    .hero p { font-size: 1.2rem; margin-top: 10px; }
-    .cta {
-      margin-top: 20px; display: inline-block; background: #facc15;
-      color: #1e293b; padding: 12px 24px; border-radius: 50px;
-      font-weight: 600; text-decoration: none; transition: 0.3s;
-    }
-    .cta:hover { background: #eab308; }
-    main { max-width: 1100px; margin: auto; padding: 40px 20px; }
-    section { margin-bottom: 60px; }
-    h2 {
-      font-size: 2rem; margin-bottom: 20px; border-left: 5px solid #38bdf8;
-      padding-left: 16px; color: #38bdf8;
-    }
-    .about p { max-width: 800px; font-size: 1.1rem; color: #cbd5e1; }
-    .skills span {
-      display: inline-block; background: #1e293b; color: #93c5fd;
-      padding: 10px 20px; margin: 8px; border-radius: 8px;
-      font-weight: 500;
-    }
-    .projects .grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background: #1e293b; padding: 20px; border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); transition: 0.3s ease;
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card h3 { color: #facc15; margin-bottom: 10px; }
-    .card p { color: #cbd5e1; font-size: 0.95rem; margin-bottom: 15px; }
-    .card a {
-      color: #3b82f6; text-decoration: none; font-weight: 600;
-    }
-    .card a:hover { text-decoration: underline; }
-    .resume a {
-      display: inline-block; background: #22d3ee; color: #0f172a;
-      padding: 14px 32px; border-radius: 50px; text-decoration: none;
-      font-weight: 600; transition: 0.3s;
-    }
-    .resume a:hover { background: #06b6d4; }
-    footer {
-      text-align: center; padding: 20px; background: #1e293b;
-      color: #94a3b8; font-size: 0.9rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil Gorade | DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
+  <!-- Hero Section -->
   <header class="hero">
-    <h1>Nikhil Gorade</h1>
-    <p>Cloud & DevOps Engineer | AWS | Docker | Jenkins | Terraform</p>
-    <a href="mailto:gorde1212nikhil@gmail.com" class="cta">Let's Connect</a>
+    <h1>👋 Hi, I'm <span class="highlight">Nikhil Gorade</span></h1>
+    <p>Aspiring Cloud DevOps Engineer | AWS | Docker | Jenkins | CI/CD</p>
   </header>
-  <main>
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I’m a Cloud DevOps Engineer with hands-on experience in AWS, CI/CD pipelines, Docker, Jenkins, and Terraform. I enjoy automating deployments and building reliable cloud infrastructure to deliver efficient and scalable applications.</p>
-    </section>
-    <section class="tech">
-      <h2>Tech Stack</h2>
-      <div class="skills">
-        <span>AWS</span><span>Docker</span><span>Jenkins</span><span>Terraform</span>
-        <span>GitHub Actions</span><span>Linux</span><span>CI/CD</span>
+
+  <!-- About Me -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate DevOps enthusiast with hands-on experience in AWS, Docker, Jenkins, and CI/CD pipelines.
+      I’ve worked on projects involving cloud automation and containerization, aiming to deliver scalable and reliable infrastructure.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>🚀 Django To-Do App with Docker</h3>
+        <p>Built and containerized a To-Do web app using Docker for easy deployment and scalability.</p>
       </div>
-    </section>
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Django To-Do App</h3>
-          <p>Built a containerized to-do list web app using Docker and deployed it via CI/CD on AWS EC2.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="card">
-          <h3>Infrastructure Automation</h3>
-          <p>Automated cloud infrastructure deployment using Terraform integrated with Jenkins pipelines.</p>
-          <a href="#">View Project</a>
-        </div>
-        <div class="card">
-          <h3>S3 Website Deployment</h3>
-          <p>Hosted a static website on S3 using GitHub Actions for continuous deployment with CloudFront integration.</p>
-          <a href="#">View Project</a>
-        </div>
+      <div class="project">
+        <h3>⚙️ Automated Infrastructure Deployment</h3>
+        <p>Used Terraform and Jenkins to automate AWS infrastructure and deployment processes.</p>
       </div>
-    </section>
-    <section class="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>
-      <a href="https://drive.google.com/file/d/1_m4snR0NdwjN7OovwU8IjAuh_ZM4CgGe/view?usp=sharing" target="_blank">
-        AWS DevOps Internship Certificate – LevelUp, Hyderabad
-      </a>
-    </li>
-  </ul>
-</section>
-    <section class="resume">
-      <a href="Nikhil_Resume.pdf" download>Download Resume</a>
-    </section>
-  </main>
-  <footer>© 2025 Nikhil Gorade | Powered by DevOps</footer>
+      <div class="project">
+        <h3>🧠 CI/CD for Machine Learning Projects</h3>
+        <p>Designed a Jenkins pipeline to automatically test and deploy ML models.</p>
+      </div>
+      <div class="project">
+        <h3>🔐 Blockchain Counterfeit Prevention App</h3>
+        <p>Developed a secure app to track and prevent product counterfeiting using blockchain technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        <a href="https://drive.google.com/file/d/1_m4snR0NdwjN7OovwU8IjAuh_ZM4CgGe/view?usp=sharing" target="_blank">
+          AWS DevOps Internship Certificate – LevelUp, Hyderabad
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Magical Resume -->
+  <section class="resume-cta">
+    <h2>✨ Explore My Magical Resume</h2>
+    <div class="buttons">
+      <a href="your-resume-link.pdf" class="btn resume" target="_blank">📄 View Resume</a>
+      <a href="https://github.com/niks1212" class="btn github" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/nikhil-gorade-74b015216/" class="btn linkedin" target="_blank">🔗 LinkedIn</a>
+      <a href="mailto:gorde1212nikhil@gmail.com" class="btn contact">📬 Contact Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nikhil Gorade | Built with 💙 and Cloud</p>
+  </footer>
+
 </body>
 </html>
