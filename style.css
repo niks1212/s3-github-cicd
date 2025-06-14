@@ -137,3 +137,29 @@ footer {
   color: #94a3b8;
   font-size: 0.9rem;
 }
+.certifications ul {
+  list-style: none;
+  padding: 0;
+}
+
+.certifications li {
+  background: #1e293b;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.certifications li:hover {
+  background: #334155;
+}
+
+.certifications a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.certifications a:hover {
+  text-decoration: underline;
+}
