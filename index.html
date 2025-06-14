@@ -1,62 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nikhil's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nikhil Gorade | Cloud DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f5f7fa;
+      color: #1e1e2f;
+    }
 
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-left: 4px solid #2563eb;
+      padding-left: 12px;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      background: #1e3a8a;
+      color: white;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.9em;
+      margin-left: 10px;
+    }
+  </style>
+</head>
 <body>
+
   <header>
-    <h1>Nikhil Somnath Gorade</h1>
-    <p>Cloud DevOps Engineer | AWS | Docker | Jenkins | Terraform</p>
+    <h1>Nikhil Gorade</h1>
+    <p>Cloud DevOps Engineer | AWS | Jenkins | Docker | Terraform</p>
+    <p><a href="mailto:gorde1212nikhil@gmail.com" style="color:#bbdefb;">gorde1212nikhil@gmail.com</a> | Pune, India</p>
   </header>
 
-  <section class="section-buttons">
-    <h2>Explore My Work</h2>
-    <div class="buttons">
-      <button onclick="showSection('projects')">📁 Projects</button>
-      <button onclick="showSection('certifications')">🎓 Certifications</button>
-      <button onclick="showSection('resume')">📄 Resume</button>
-    </div>
-  </section>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I'm a Cloud DevOps Engineer with experience in designing, automating, and deploying scalable cloud infrastructure using AWS, Jenkins, Docker, and Terraform. I thrive on solving problems, automating workflows, and ensuring continuous integration and delivery in cloud-native environments.</p>
+    </section>
 
-  <section id="projects" class="hidden-section">
-    <h3>Projects</h3>
-    <ul>
-      <li>Django To-Do App with Docker</li>
-      <li>Automated Infrastructure Deployment with Terraform & Jenkins</li>
-      <li>CI/CD Pipeline for Machine Learning Projects</li>
-      <li>Blockchain-Based Counterfeit Prevention Application</li>
-      <li>Two-Digit Object Counter using 7-Segment Display</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>✅ <strong>Cloud:</strong> Amazon Web Services (AWS)</li>
+        <li>✅ <strong>CI/CD:</strong> Jenkins, GitHub Actions, Git, GitLab</li>
+        <li>✅ <strong>Containers:</strong> Docker</li>
+        <li>✅ <strong>IaC:</strong> Terraform</li>
+        <li>✅ <strong>OS & Tools:</strong> Linux, MobaXterm, Putty, PowerShell</li>
+      </ul>
+    </section>
 
-  <section id="certifications" class="hidden-section">
-    <h3>Certifications</h3>
-    <ul>
-      <li><a href="https://drive.google.com/file/d/1_m4snR0NdwjN7OovwU8IjAuh_ZM4CgGe/view?usp=sharing" target="_blank">AWS DevOps Internship – LevelUp</a></li>
-    </ul>
-  </section>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Django To-Do App with Docker</strong> <span class="badge">Dockerized</span> — Built and deployed a scalable to-do application using Docker containers.</li>
+        <li><strong>Automated Infrastructure Deployment</strong> <span class="badge">Terraform + Jenkins</span> — Automated infrastructure provisioning using Terraform scripts and Jenkins pipeline.</li>
+        <li><strong>CI/CD for Machine Learning Projects</strong> — Developed an automated Jenkins pipeline for testing and deploying ML models.</li>
+        <li><strong>Blockchain Counterfeit Prevention System</strong> — Built a secure blockchain-based app to prevent counterfeit products.</li>
+        <li><strong>Two-Digit Object Counter</strong> — Hardware-based microcontroller project using 7-segment displays for real-time object counting.</li>
+      </ul>
+    </section>
 
-  <section id="resume" class="hidden-section">
-    <h3>My Resume</h3>
-    <a href="your-resume-link.pdf" class="btn" target="_blank">📄 Download Resume</a>
-  </section>
+    <section>
+      <h2>Education</h2>
+      <p><strong>B.E. in Electronics and Telecommunication</strong><br/>
+      JSPM’s ICOER, Pune University – <em>2023</em><br/>
+      Honors in Artificial Intelligence and Machine Learning</p>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <p><strong>AWS DevOps Engineer Internship</strong><br/>
+      LevelUp, Hyderabad – June to Dec 2024</p>
+    </section>
+
+    <section>
+      <h2>Connect</h2>
+      <p>
+        <a href="https://github.com/niks1212" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/nikhil-gorade-74b015216/" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Nikhil Somnath Gorade</p>
+    <p>© 2025 Nikhil Gorade. All rights reserved.</p>
   </footer>
 
-  <script>
-    function showSection(id) {
-      const sections = document.querySelectorAll('.hidden-section');
-      sections.forEach(section => section.style.display = 'none');
-      document.getElementById(id).style.display = 'block';
-    }
-  </script>
 </body>
-
 </html>
